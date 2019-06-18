@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIGNOS</title>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1><strong>Signo do Mês</strong></h1>
+    </header>
+
+    <section>
+        <div id="mes"></div>
+
+        <div id="fotoSignoMesAtual">
+            <img id="signoMesAtual" src="Imagens/mulher/m_aquario_21_1_18_2.png" alt="signo mulher">
+        </div>
+    </section>
+
+    <section>
+        <h1 id="titulo_caixa"><strong>Qual a sua data de nascimento?</strong></h1>
+        <p><input type="text" name="seusigno" id="seusigno"></p>
+        <p><input type="button" value="verificar" onclick="verificar()"></p>
+
+        <div id="res">
+            Resultado
+        </div>
+        
+        <div>FOTO SEU SIGNO</div>
+    </section>
+
+    <footer>
+        <p>&copy;Renan Bernardelli</p>
+    </footer>
+
+    <script src="format.js"></script>
+</body>
+</html>
