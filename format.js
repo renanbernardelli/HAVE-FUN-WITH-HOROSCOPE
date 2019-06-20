@@ -1,75 +1,114 @@
 function carregar() {
     const qualMes = document.querySelector('div#mes');
 
-    let imgMesAtual = document.querySelector('img#signoMesAtual');
-
     const mes = new Date();
     const diaAtual = mes.getDate(); 
     const mesAtual = mes.getMonth() + 1;
-    
-    qualMes.textContent = `A data atual é ${diaAtual}-${mesAtual}`;
 
+    let foto = document.querySelector('div#foto');
+    let img = document.createElement('img');
+    img.setAttribute('id', 'foto');
+
+    
     if (diaAtual >= 21 && mesAtual == 1) {
-        if (diaAtual <= 18 && mesAtual == 2) {
-            imgMesAtual.src = 'Imagens/mulher/m_aquario_21_1_18_2.png';
-        }
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Aquario!`;
+        img.setAttribute('src', 'Imagens/aquario.png');
+    }
+    else if(diaAtual <= 19 && mesAtual == 2) {
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Aquario!`;
+        img.setAttribute('src', 'Imagens/aquario.png');
     }
     else if (diaAtual >= 21 && mesAtual == 3) {
-        if (diaAtual <= 20 && mesAtual == 4) {
-            imgMesAtual.src = 'Imagens/mulher/m_aries_20_3_20_4.png';
-        }
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Aries!`;
+        img.setAttribute('src', 'Imagens/aries.png');
+    }
+    else if (diaAtual <= 20 && mesAtual == 4) {
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Aries!`;
+        img.setAttribute('src', 'Imagens/aries.png');
     }
     else if (diaAtual >= 21 && mesAtual == 6) {
-        if (diaAtual <=21 && mesAtual == 7) {
-            imgMesAtual.src = 'Imagens/mulher/m_cancer_21_6_21_7.png';
-        }
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Cancer!`;
+        img.setAttribute('src', 'Imagens/cancer.png');
+    }
+    else if (diaAtual <=21 && mesAtual == 7) {
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Cancer!`;
+        img.setAttribute('src', 'Imagens/cancer.png');
     }
     else if (diaAtual >= 22 && mesAtual == 12) {
-        if (diaAtual <= 21 && mesAtual == 1) {
-            imgMesAtual.src = 'Imagens/mulher/m_capricornio_22_12_21_1.png';
-        }
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Capricórnio!`;
+        img.setAttribute('src', 'Imagens/capricornio.png');
+    }
+    else if (diaAtual <= 20 && mesAtual == 1) {
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Capricórnio!`;
+        img.setAttribute('src', 'Imagens/capricornio.png');
     }
     else if (diaAtual >= 23 && mesAtual == 10) {
-        if (diaAtual <= 21 && mesAtual == 11) {
-            imgMesAtual.src = 'Imagens/mulher/m_escorpiao_23_10_21_11.png';
-        }
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Escorpião!`;
+        img.setAttribute('src', 'Imagens/escorpiao.png');
+    }
+    else if (diaAtual <= 21 && mesAtual == 11) {
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Escorpião!`;
+        img.setAttribute('src', 'Imagens/escorpiao.png');
     }
     else if (diaAtual >= 21 && mesAtual == 5) {
-        if (diaAtual <= 20 && mesAtual == 6) {
-            imgMesAtual.src = 'Imagens/mulher/m_gemeos21_5_20_6.png';
-        }
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Gêmeos!`;
+        img.setAttribute('src', 'Imagens/gemeos.png');
+    }
+    else if (diaAtual <= 20 && mesAtual == 6) {
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Gêmeos!`;
+        img.setAttribute('src', 'Imagens/gemeos.png');
     }
     else if (diaAtual >= 22 && mesAtual == 7) {
-        if (diaAtual <=22 && mesAtual == 8) {
-            imgMesAtual.src = 'Imagens/mulher/m_leao_22_7_22_8.png';
-        }
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Leão!`;
+        img.setAttribute('src', 'Imagens/leao.png');
+    }
+    else if (diaAtual <=22 && mesAtual == 8) {
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Leão!`;
+        img.setAttribute('src', 'Imagens/leao.png');
     }
     else if (diaAtual >= 23 && mesAtual == 9) {
-        if (diaAtual <= 22 && mesAtual == 10){
-            imgMesAtual.src = 'Imagens/mulher/m_libra_23_9_22_10.png';
-        }
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Libra!`;
+        img.setAttribute('src', 'Imagens/libra.png');
     }
-    else if (diaAtual >= 19 && mesAtual == 2) {
-        if (diaAtual <= 19 && mesAtual == 3){
-            imgMesAtual.src = 'Imagens/mulher/m_peixes_19_2_19_3.png';
-        }
+    else if (diaAtual <= 22 && mesAtual == 10){
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Libra!`;
+        img.setAttribute('src', 'Imagens/libra.png');
+    }
+    else if (diaAtual >= 20 && mesAtual == 2) {
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Peixes!`;
+        img.setAttribute('src', 'Imagens/peixes.png');
+    }
+    else if (diaAtual <= 20 && mesAtual == 3){
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Peixes!`;
+        img.setAttribute('src', 'Imagens/peixes.png');
     }
     else if (diaAtual >= 22 && mesAtual == 11) {
-        if (diaAtual <= 21 && mesAtual == 12) {
-            imgMesAtual.src = 'Imagens/mulher/m_sagitario_22_11_21_12.png';
-        }
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Sagitário!`;
+        img.setAttribute('src', 'Imagens/sagitario.png');
+    }
+    else if (diaAtual <= 21 && mesAtual == 12) {
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Sagitário!`;
+        img.setAttribute('src', 'Imagens/sagitario.png');
     }
     else if (diaAtual >= 21 && mesAtual == 4) {
-        if (diaAtual <= 20 && mesAtual == 5) {
-            imgMesAtual.src = 'Imagens/mulher/m_touro_21_4_20_5.png';
-        }
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Touro!`;
+        img.setAttribute('src', 'Imagens/touro.png');
+    }
+    else if (diaAtual <= 20 && mesAtual == 5) {
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Touro!`;
+        img.setAttribute('src', 'Imagens/touro.png');
     }
     else if (diaAtual >= 23 && mesAtual == 8) {
-        if (diaAtual <= 22 && mesAtual == 9) {
-            imgMesAtual.src = 'Imagens/mulher/m_virgem_23_8_22_9.png';
-        }
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Virgem!`;
+        img.setAttribute('src', 'Imagens/virgem.png');
+    }
+    else if (diaAtual <= 22 && mesAtual == 9) {
+        qualMes.textContent = `Hoje é dia ${diaAtual}/${mesAtual}, signo de Virgem!`;
+        img.setAttribute('src', 'Imagens/virgem.png');
     }
     else {
         imgMesAtual.src = 'none';
     }
+
+    foto.appendChild(img);
 }

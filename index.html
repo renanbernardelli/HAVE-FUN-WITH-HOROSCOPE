@@ -5,36 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SIGNOS</title>
+    <link rel="stylesheet" href="style_site_signo.css">
 </head>
 <body onload="carregar()">
     <header>
-        <h1><strong>Signo do Mês</strong></h1>
+        <h1><strong>Signo Atual</strong></h1>
     </header>
-
+    
     <section>
         <div id="mes"></div>
-
-        <div id="fotoSignoMesAtual">
-            <img id="signoMesAtual" src="Imagens/mulher/m_aquario_21_1_18_2.png" alt="signo mulher">
-        </div>
+        <div id="foto"></div>
     </section>
 
     <section>
-        <h1 id="titulo_caixa"><strong>Qual a sua data de nascimento?</strong></h1>
-        <p><input type="text" name="seusigno" id="seusigno"></p>
+        <h1 id="titulo_caixa"><strong>Qual a sua data de nascimento (dia/mês)?</strong></h1>
+        <p><input type="number" name="diaNasc" id="diaNasc" placeholder="1-31"><strong> / </strong><input type="number" name="mesNasc" id="mesNasc" placeholder="1-12"></p>
+
+        <p>Sexo:
+            <input type="radio" name="radSex" id="masc" checked>
+            <label for="masc">Homem</label>
+            <input type="radio" name="radSex" id="fem">
+            <label for="fem">Mulher</label>
+        </p>
+
         <p><input type="button" value="verificar" onclick="verificar()"></p>
 
-        <div id="res">
-            Resultado
-        </div>
-        
-        <div>FOTO SEU SIGNO</div>
+        <div id="res"></div>
     </section>
+
 
     <footer>
         <p>&copy;Renan Bernardelli</p>
     </footer>
 
     <script src="format.js"></script>
+    <script src="format_fem_masc.js"></script>
 </body>
 </html>
