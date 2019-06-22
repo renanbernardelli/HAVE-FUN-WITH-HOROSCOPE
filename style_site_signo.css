@@ -1,0 +1,27 @@
+body {
+    background: url('Imagens/4k-wallpaper-blue-sky-clouds-2456432.jpg') no-repeat;
+}
+header {
+    text-align: center;
+    color: aliceblue;
+    font-size: 25pt;
+    text-shadow: 3pt 3pt 5pt black;
+    font-family: 'Courgette', cursive;
+}
+div#mes {
+    text-align: center;
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 19pt;
+    color: rgb(6, 44, 78);
+    text-shadow: 5pt 5pt 5pt rgb(255, 255, 255);
+}
+div#foto{
+    display: block;
+    position: relative;
+    padding-left: 500px;
+    padding-top: 50px;
+    
+}
+footer {
+    text-align: center;
+}
