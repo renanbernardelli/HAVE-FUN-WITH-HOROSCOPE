@@ -5,14 +5,14 @@ function verificar() {
     mesNasc = Number(mesNasc.value);
     let res = document.querySelector('div#res');
 
-    if(diaNasc.value.length == 0 || diaNasc.value > 31 && mesNasc.value.length == 0 || mesNasc.value > 12) {
+    if(diaNasc == 0 || diaNasc > 31 && mesNasc == 0 || mesNasc > 12) {
         window.alert('[ERRO] As datas informadas não correspondem com os dias e meses!');
     }
     else {
-        let radSex = document.getElementsByName('radSex');
-        let foto = document.createElement('foto');
-        foto.setAttribute('id', 'foto')
-        if (radSex[0].checked) {
+        let radSex = document.querySelector('input[name="radSex"]:checked').value;
+        let foto = document.createElement('img');
+        foto.setAttribute('id', 'foto');
+        if (radSex === 'm') {
             if(diaNasc >= 21 && mesNasc == 1) {
                 foto.setAttribute('src', 'Imagens/homem/h_aquario_21_1_18_2.png');
             }
@@ -89,7 +89,7 @@ function verificar() {
                 alert('[ERRO] A data digitada não existe!');
             }
         }
-        else if(radSex[1].checked) {
+        else if(radSex === 'f') {
             if(diaNasc >= 21 && mesNasc == 1) {
                 foto.setAttribute('src', 'Imagens/mulher/m_aquario_21_1_18_2.png');
             }
