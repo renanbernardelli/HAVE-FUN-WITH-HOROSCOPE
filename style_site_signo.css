@@ -1,42 +1,121 @@
 body {
     background: url('Imagens/4k-wallpaper-blue-sky-clouds-2456432.jpg') no-repeat;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-header {
+.animated-text{
     text-align: center;
     color: aliceblue;
-    font-size: 25pt;
-    text-shadow: 3pt 3pt 5pt black;
+    font-size: 38px;
+    text-shadow: 3px 0 3px black;
     font-family: 'Courgette', cursive;
+    padding: 0 1em;
+    height: 60px;
+    overflow: hidden;
 }
-section#sec1 {
+.line{
+    line-height: 60px;
+}
+.line:first-child{
+    animation: anim 13s infinite;
+}
+@keyframes anim {
+    0%{
+        margin-top: 0;
+    }
+    16%{
+        margin-top: -60px;
+    }
+    33%{
+        margin-top: -120px;
+    }
+    50%{
+        margin-top: -180px;
+    }
+    66%{
+        margin-top: -120px;
+    }
+    82%{
+        margin-top: -60px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+.position-principal {
+    display: inline-block;
+    width: 50%;
     text-align: center;
 }
-div#mes {
+
+.sec1{
+    float: left;
+    margin-top: 1em;
+    padding-top: 0.5em;
+}
+
+.sec2{
+    float: right;
+}
+
+#mes {
     font-family: 'Bubblegum Sans', cursive;
-    font-size: 19pt;
+    font-size: 2em;;
     color: rgb(6, 44, 78);
     text-shadow: 5pt 5pt 5pt rgb(255, 255, 255);
 }
-div#foto{
+#foto {
+    width: 80%;
     display: block;
-    position: relative;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1.5em auto;
 }
-section#sec2 {
-    text-align: center;
-}
-h1#titulo_caixa {
+
+#titulo_caixa {
     font-family: 'Bubblegum Sans', cursive;
-    font-size: 19pt;
-    color: rgb(6, 44, 78);
+    font-size: 2em;
+    color: rgb(29, 52, 71);
     text-shadow: 3pt 3pt 3pt rgb(255, 255, 255);
 }
-p#sexo {
+#sexo {
     font-family: 'Bubblegum Sans', cursive;
     font-size: 13pt;
 }
-footer {
+#masc {
+    cursor: pointer;
+}
+#fem {
+    cursor: pointer;
+}
+#button {
+    border: none;
+    margin: 0.5em;
+    width: auto;
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 1.5em;
     text-align: center;
+    text-transform: uppercase;
+    color: aliceblue;
+    border-radius: 6px;
+    cursor: pointer;
+    background-image: linear-gradient(to left, #0652DD,#1B1464,#0652DD);
+    background-size: 200%;
+    transition: 0.6s;
+}
+#button:hover {
+    background-position: right;
+}
+#res {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-left: 1em;
 }

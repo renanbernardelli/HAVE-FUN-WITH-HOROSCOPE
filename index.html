@@ -11,15 +11,22 @@
 </head>
 <body onload="carregar()">
     <header>
-        <h1><strong>Signo Atual</strong></h1>
+        <h1>
+            <div class="animated-text">
+                <div class="line"> Olá pessoas!</div>
+                <div class="line"> Sem bem vindas!</div>
+                <div class="line"> Veja seu signo!</div>
+                <div class="line"> Divirta-se! &#128522</div>
+            </div>
+        </h1>
     </header>
     
-    <section id="sec1">
-        <div id="mes"></div>
+    <section class="position-principal sec1">
+        <div id="mes"><strong></strong></div>
         <div id="foto"></div>
     </section>
 
-    <section id="sec2">
+    <section class="position-principal sec2">
         <h1 id="titulo_caixa"><strong>Qual a sua data de nascimento (dia/mês)?</strong></h1>
         <p><input type="number" name="diaNasc" id="diaNasc" placeholder="1-31" size="5"><strong> / </strong><input type="number" name="mesNasc" id="mesNasc" placeholder="1-12" size="5"></p>
 
@@ -30,11 +37,10 @@
             <label for="fem">Mulher</label>
         </p>
 
-        <p><input type="button" value="verificar" onclick="verificar()"></p>
+        <p><input type="button" value="verificar" onclick="verificar()" id="button"></p>
 
         <div id="res"></div>
     </section>
-
 
     <footer>
         <p class="font-effect-fire-animation">&copy;Renan Bernardelli</p>

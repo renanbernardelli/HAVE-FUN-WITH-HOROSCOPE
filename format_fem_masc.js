@@ -130,7 +130,7 @@ function verificar() {
             else if (diaNasc >= 22 && mesNasc == 7) {
                 foto.setAttribute('src', 'Imagens/mulher/m_leao_22_7_22_8.png');
             }
-            else if (diaNasc <=22 && diaNasc == 8) {
+            else if (diaNasc <=22 && mesNasc == 8) {
                 foto.setAttribute('src', 'Imagens/mulher/m_leao_22_7_22_8.png');
             }
             else if (diaNasc >= 23 && mesNasc == 9) {
@@ -139,7 +139,7 @@ function verificar() {
             else if (diaNasc <= 22 && mesNasc == 10){
                 foto.setAttribute('src', 'Imagens/mulher/m_libra_23_9_22_10.png');
             }
-            else if (diaNasc >= 20 && diaNasc == 2) {
+            else if (diaNasc >= 20 && mesNasc == 2) {
                 foto.setAttribute('src', 'Imagens/mulher/m_peixes_19_2_19_3.png');
             }
             else if (diaNasc <= 20 && mesNasc == 3){
