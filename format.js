@@ -1,11 +1,11 @@
 function carregar() {
-    const qualMes = document.querySelector('div#mes');
+    const qualMes = document.querySelector('#mes');
 
     const mes = new Date();
     const diaAtual = mes.getDate(); 
     const mesAtual = mes.getMonth() + 1;
 
-    let foto = document.querySelector('div#foto');
+    let foto = document.querySelector('#foto');
     let img = document.createElement('img');
     img.setAttribute('id', 'foto');
 

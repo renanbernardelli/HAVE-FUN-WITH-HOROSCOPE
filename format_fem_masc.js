@@ -1,9 +1,9 @@
 function verificar() {
-    let diaNasc = document.querySelector('input#diaNasc');
+    let diaNasc = document.querySelector('#diaNasc');
     diaNasc = Number(diaNasc.value);
-    let mesNasc = document.querySelector('input#mesNasc');
+    let mesNasc = document.querySelector('#mesNasc');
     mesNasc = Number(mesNasc.value);
-    let res = document.querySelector('div#res');
+    let res = document.querySelector('#res');
 
     if(diaNasc == 0 || diaNasc > 31 && mesNasc == 0 || mesNasc > 12) {
         window.alert('[ERRO] As datas informadas não correspondem com os dias e meses!');

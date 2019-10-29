@@ -14,37 +14,37 @@
         <h1>
             <div class="animated-text">
                 <div class="line"> Olá pessoas!</div>
-                <div class="line"> Sem bem vindas!</div>
+                <div class="line"> Bem vindas!</div>
                 <div class="line"> Veja seu signo!</div>
                 <div class="line"> Divirta-se! &#128522</div>
             </div>
         </h1>
     </header>
-    
-    <section class="position-principal sec1">
-        <div id="mes"><strong></strong></div>
-        <div id="foto"></div>
-    </section>
+    <main class="principal">
+        <section class="position-principal sec1">
+            <div id="mes"><strong></strong></div>
+            <div id="foto"></div>
+        </section>
 
-    <section class="position-principal sec2">
-        <h1 id="titulo_caixa"><strong>Qual a sua data de nascimento (dia/mês)?</strong></h1>
-        <p><input type="number" name="diaNasc" id="diaNasc" placeholder="1-31" size="5"><strong> / </strong><input type="number" name="mesNasc" id="mesNasc" placeholder="1-12" size="5"></p>
+        <section class="position-principal sec2">
+            <h1 id="titulo_caixa"><strong>Qual a sua data de nascimento (dia/mês)?</strong></h1>
+            <p><input type="number" name="diaNasc" id="diaNasc" placeholder="1-31" size="5"><strong> / </strong><input type="number" name="mesNasc" id="mesNasc" placeholder="1-12" size="5"></p>
 
-        <p id="sexo">Sexo:
-            <input type="radio" name="radSex" id="masc" value="m" checked>
-            <label for="masc">Homem</label>
-            <input type="radio" name="radSex" id="fem" value="f">
-            <label for="fem">Mulher</label>
-        </p>
+            <p id="sexo">Sexo:
+                <input type="radio" name="radSex" id="masc" value="m" checked>
+                <label for="masc">Homem</label>
+                <input type="radio" name="radSex" id="fem" value="f">
+                <label for="fem">Mulher</label>
+            </p>
 
-        <p><input type="button" value="verificar" onclick="verificar()" id="button"></p>
+            <p><input type="button" value="verificar" onclick="verificar()" id="button"></p>
 
-        <div id="res"></div>
-    </section>
-
-    <footer>
-        <p class="font-effect-fire-animation">&copy;Renan Bernardelli</p>
-    </footer>
+            <div id="res"></div>
+        </section>
+        <footer>
+            <p class="font-effect-fire-animation">&copy;Renan Bernardelli</p>
+        </footer>
+    </main>
 
     <script src="format.js"></script>
     <script src="format_fem_masc.js"></script>
