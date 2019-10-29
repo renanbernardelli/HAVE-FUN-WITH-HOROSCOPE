@@ -4,11 +4,14 @@ On this single web page, you'll figure out more about yourself, playing with hor
 ## How does it work? It's pretty easy!
 As soon as you access the page, there will be a header, two-section and, finally a footer:
 ### Header: scrolling wellcome.
+![header](https://github.com/renanbernardelli/HAVE-FUN-WITH-HOROSCOPE/blob/master/gifs/header.gif)
 ### First section, left side, show you the current horoscope and date.
+![first_section](https://github.com/renanbernardelli/HAVE-FUN-WITH-HOROSCOPE/blob/master/gifs/first_section.png)
 ### In the second section, right side, there is an input to type the date/month, select the sex and click on "VERIFICAR".
 #### It will appear a small frame containing the horoscope regarding your date and sex choice.
+![second_section](https://github.com/renanbernardelli/HAVE-FUN-WITH-HOROSCOPE/blob/master/gifs/second_section.gif)
 ### Finally, ending with a simple footer.
-
+![page](https://github.com/renanbernardelli/HAVE-FUN-WITH-HOROSCOPE/blob/master/gifs/page.png)
 ## Mainly CSS features used:
 #### The Headers effects:
 ```
